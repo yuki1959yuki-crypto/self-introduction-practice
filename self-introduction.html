@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>自己紹介-松永有希</title>
+</head>
+<body>
+        <h1>自己紹介</h1>
+
+        <h2>プロフィール</h2>
+        <p>名前：松永有希</p>
+        <p>年齢：39歳</p>
+        <p>出身地：三重県在住</p>
+        <p>趣味：読書、旅行</p>
+
+        <h2>好きなもの</h2>
+        <ul>
+        <li>いちご</li>
+        <li>チョコレート</li>
+        <li>抹茶</li>
+        </ul>
+
+        <h2>今年の目標</h2>
+        <ol>
+        <li>健康を維持する</li>
+        <li>Laravelをマスターする</li>
+        <li>旅行に行く</li>
+        </ol>
+
+        <h2>リンク</h2>
+        <a href="https://github.com/dashboard" target="_blank">私のGitHub</a>
+        
+        <h2>好きな風景</h2>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="好きな風景" width="400">
+        
+        <h2>お問い合わせ</h2>
+        <form action="/submit" method="post">
+        <div>
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+                <label for="contact-category">お問い合わせ種別:</label>
+                <select id="contact-category" name="category">
+                <option value="">--選択してください--</option>
+                <option value="general">一般的なお問い合わせ</option>
+                <option value="feedback">ご意見・ご要望</option>
+                </select>
+        </div>
+        <div>
+                <label for="contact-message">お問い合わせ内容:</label>
+                <textarea id="contact-message" name="message" rows="5" cols="50" required></textarea>
+        </div>
+        <div>
+        <button type="submit">送信する</button>
+        </div>
+        </form>
+</body>
+</html>
